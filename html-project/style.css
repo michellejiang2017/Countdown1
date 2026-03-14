@@ -1,0 +1,21 @@
+p {
+    font-size: 20px;
+    color:black;
+}
+body {
+    background-color: lightyellow;
+    margin: 20px;
+    padding: 20px;
+}
+h1 { 
+    color:cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul {
+    list-style-type: square;
+    justify-content: center;
+    border: 1px solid skyblue;
+}
+a {
+    color: red;
+}
