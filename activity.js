@@ -18,7 +18,7 @@ const addBook = (newTitle, newAuthor) => {
 
 // (2) Write an arrow function that removes a specific book from the bookList
 const removeBook = (removeTitle, removeAuthor) => {
-  bookList.pop(bookList.findIndex(book => book.title === removeTitle && book.author === removeAuthor));
+  return bookList.filter(book => book.title !== removeTitle || book.author !== removeAuthor);
 };
 
 // (3) Write an arrow function that prints all book titles using .forEach()
@@ -31,7 +31,7 @@ const printBooks = () => {
 
 // (4) Write a one-line arrow function that takes in a number and returns
 // whether the number is positive or negative using a ternary operator
-const numberSign = (n) => n > 0 ? "positive" : "negative";
+const numberSign = (n) => (n > 0 ? "positive" : "negative");
 
 
 /* (5) Write a switch statement for a 'day' variable that prints something
